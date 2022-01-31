@@ -31,8 +31,9 @@ class AppCoordinator: Coordinator {
         self.navigationController.pushViewController(signUp, animated: true)
     }
     
-    func navigateToHomeVC() {
+    func navigateToHomeVC(userName: String) {
         let homeVC = HomeVC.instanciateFromStoryBoard()
+        homeVC.usrName = userName
         self.navigationController.pushViewController(homeVC, animated: true)
     }
     

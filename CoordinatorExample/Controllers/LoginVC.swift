@@ -9,6 +9,10 @@ import UIKit
 
 class LoginVC: UIViewController, CoordinatorBoard {
     
+    @IBOutlet weak var userNameLabel: UITextField!
+    
+    @IBOutlet weak var passwordLabel: UITextField!
+    
     var appCoordinator: AppCoordinator?
 
     override func viewDidLoad() {
@@ -17,16 +21,19 @@ class LoginVC: UIViewController, CoordinatorBoard {
     }
 
     @IBAction func loginPressed(_ sender: UIButton) {
-        appCoordinator?.navigateToHomeVC()
+        if self.userNameLabel.text != "" {
+            self.appCoordinator?.navigateToHomeVC(userName: userNameLabel.text!)
+            self.userNameLabel.text = ""
+    }
     }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
-        appCoordinator?.navigateToSignUpVC()
+        self.appCoordinator?.navigateToSignUpVC()
     }
     
     
     @IBAction func forgotPasswordPressed(_ sender: Any) {
-        appCoordinator?.navigateToResetPasswordVC()
+        self.appCoordinator?.navigateToResetPasswordVC()
     }
     
     

@@ -97,6 +97,10 @@
                             <constraint firstItem="NGe-kP-AR8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysp-EY-2k8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordLabel" destination="NGe-kP-AR8" id="BW7-fA-aTi"/>
+                        <outlet property="userNameLabel" destination="Scl-E8-wwC" id="MIv-1k-mYc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,6 +194,9 @@
                             <constraint firstItem="f8L-So-SJa" firstAttribute="centerY" secondItem="OaZ-wx-qWx" secondAttribute="centerY" multiplier="0.5" id="fgo-8W-1d8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usrNameLabel" destination="MZ8-oR-1dH" id="CsK-2y-6Hx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtg-Cb-qrr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

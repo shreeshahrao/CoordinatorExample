@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpVC: UIViewController, CoordinatorBoard {
+class SignUpVC: UIViewController, CoordinatorBoard  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
